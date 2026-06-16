@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ====== SEO УПАКОВКА ====== -->
+<title>ВІТРАНСІНВЕСТ | Архитектура, строительство, 3D-визуализация, упаковка брендов</title>
+<meta name="description" content="ВІТРАНСІНВЕСТ — архитектура, строительство под ключ и цифровые решения для бизнеса. 3D-модели, сметы, брендинг, сайты, Telegram-боты. Живой контакт в Telegram.">
+<meta name="keywords" content="архитектура, строительство, 3D-визуализация, дизайн интерьера, проектирование, сметы, ландшафтный дизайн, упаковка бренда, создание сайтов, Telegram-боты, Киев, Украина">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background: #0b0f14;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  border-bottom: 1px solid #1a1f2a;
+  position: sticky;
+  top: 0;
+  background: #0b0f14;
+  z-index: 100;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #00aaff;
+}
+
+nav a {
+  margin-left: 25px;
+  color: #aaa;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+/* ===== HERO ===== */
+.hero {
+  padding: 80px 60px 50px;
+  max-width: 1200px;
+}
+
+.hero h1 {
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 1.2;
+  max-width: 900px;
+}
+
+.hero h1 span {
+  color: #00aaff;
+}
+
+.hero .sub-text {
+  margin-top: 20px;
+  color: #aaa;
+  max-width: 850px;
+  font-size: 18px;
+}
+
+/* ===== КНОПКИ ===== */
+.btn-main {
+  margin-top: 30px;
+  padding: 16px 28px;
+  background: #00aaff;
+  color: #000;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-main:hover {
+  background: #0099ee;
+  transform: scale(1.02);
+}
+
+/* ===== МЕНЮ СОЦСЕТЕЙ ===== */
+.menu {
+  display: none;
+  margin-top: 25px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.menu a {
+  padding: 14px 22px;
+  border: 1px solid #2a2f3a;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  background: #1a1f2a;
+  border-color: #00aaff;
+}
+
+/* ===== IFRAME ===== */
+.iframe-wrap {
+  margin-top: 40px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #1f2633;
+}
+
+.iframe-wrap iframe {
+  width: 100%;
+  height: 500px;
+  display: block;
+  border: none;
+}
+
+/* ===== СЕКЦИИ ===== */
+.section {
+  padding: 60px 60px 40px;
+  border-top: 1px solid #1a1f2a;
+}
+
+.section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.section h2 span {
+  color: #00aaff;
+}
+
+.section .desc {
+  color: #aaa;
+  max-width: 900px;
+  font-size: 16px;
+}
+
+/* ===== СЕТКА УСЛУГ ===== */
+.grid-services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.grid-services .item {
+  background: #12181f;
+  padding: 20px 18px;
+  border-radius: 10px;
+  border: 1px solid #1f2633;
+  transition: 0.3s;
+}
+
+.grid-services .item:hover {
+  border-color: #00aaff;
+  transform: translateY(-3px);
+}
+
+.grid-services .item strong {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.grid-services .item span {
+  font-size: 13px;
+  color: #888;
+}
+
+/* ===== СПИСОК ЦИФРОВЫХ УСЛУГ ===== */
+.digital-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  margin-top: 25px;
+}
+
+.digital-list .item {
+  background: #12181f;
+  padding: 16px 18px;
+  border-radius: 8px;
+  border: 1px solid #1f2633;
+  color: #ccc;
+  font-size: 14px;
+  text-align: center;
+}
+
+.digital-list .item::before {
+  content: "▸ ";
+  color: #00aaff;
+}
+
+/* ===== ТЕЛЕГРАМ-БЛОК ===== */
+.telegram-block {
+  margin-top: 35px;
+  padding: 25px 30px;
+  background: #12181f;
+  border-radius: 12px;
+  border-left: 4px solid #00aaff;
+  max-width: 800px;
+}
+
+.telegram-block p {
+  color: #ccc;
+  font-size: 15px;
+}
+
+.telegram-block strong {
+  color: #00aaff;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  padding: 40px 60px;
+  text-align: center;
+  color: #666;
+  border-top: 1px solid #1a1f2a;
+  font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="logo">ВІТРАНСІНВЕСТ</div>
+  <nav>
+    <a href="#services">Услуги</a>
+    <a href="#about">О нас</a>
+    <a href="#digital">Цифра</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+
+  <h1>Архитектура, строительство <br><span>и цифровая упаковка</span></h1>
+
+  <p class="sub-text">
+    Проектируем, строим, визуализируем. А ещё упаковываем бизнес в сайты, ботов и соцсети.
+    С 2005 года решаем задачи любой сложности.
+  </p>
+
+  <!-- КНОПКА -->
+  <button class="btn-main" onclick="toggleMenu()">
+    📱 Связаться с нами
+  </button>
+
+  <!-- СОЦСЕТИ -->
+  <div class="menu" id="menu">
+    <a href="https://t.me/SMM_Promotion" target="_blank">📩 Telegram</a>
+    <a href="https://www.facebook.com/Vitransinvest" target="_blank">📘 Facebook</a>
+    <a href="https://invite.viber.com/?g2=AQA12m%2FoJ%2Bv%2Bs1azsTGtCJgwpoomCJ42DzV9uIXCN7t7lyS1rLzl8k%2BiExVJnHOB" target="_blank">💬 Viber</a>
+    <a href="https://wa.me/380685742713" target="_blank">📲 WhatsApp</a>
+    <a href="tel:+380685742713">📞 Позвонить</a>
+  </div>
+
+  <!-- IFRAME -->
+  <div class="iframe-wrap">
+    <iframe src="https://www.rabotniki.ua/50199" title="Портфолио ВІТРАНСІНВЕСТ"></iframe>
+  </div>
+
+</section>
+
+<!-- ===== О КОМПАНИИ ===== -->
+<section class="section" id="about">
+  <h2>О компании <span>ВІТРАНСІНВЕСТ</span></h2>
+  <p class="desc">
+    Работаем с 2005 года. Полный цикл: от идеи и концепции до реализации объекта под ключ.
+    Выполняем архитектурное и инженерное проектирование, дизайн интерьеров, 3D-визуализацию,
+    сметные расчёты и техническую документацию.
+  </p>
+  <p class="desc" style="margin-top:12px;">
+    За годы реализованы проекты от частных коттеджей до крупных объектов площадью тысячи м².
+  </p>
+</section>
+
+<!-- ===== УСЛУГИ (СТРОЙКА) ===== -->
+<section class="section" id="services">
+  <h2>Направления <span>строительства</span></h2>
+  <div class="grid-services">
+    <div class="item"><strong>🏛 Архитектура</strong><span>Проектирование любой сложности</span></div>
+    <div class="item"><strong>🛋 Дизайн интерьера</strong><span>Стиль, эргономика, уют</span></div>
+    <div class="item"><strong>🎨 3D-визуализация</strong><span>Фотореалистичные модели</span></div>
+    <div class="item"><strong>📊 Сметы и документация</strong><span>Точные расчёты</span></div>
+    <div class="item"><strong>🌿 Ландшафтный дизайн</strong><span>Благоустройство территорий</span></div>
+    <div class="item"><strong>🔧 Тех. сопровождение</strong><span>Контроль на объекте</span></div>
+  </div>
+</section>
+
+<!-- ===== ЦИФРОВЫЕ УСЛУГИ (НОВЫЙ БЛОК) ===== -->
+<section class="section" id="digital">
+  <h2>Цифровая <span>упаковка</span></h2>
+  <p class="desc">
+    Не только стройка. Делаем сайты, ботов, брендинг и контент — чтобы ваш бизнес выглядел мощно в онлайне.
+  </p>
+  <div class="digital-list">
+    <div class="item">Сайты и лендинги</div>
+    <div class="item">Telegram-боты</div>
+    <div class="item">Брендинг и айдентика</div>
+    <div class="item">Соцсети и контент-стратегии</div>
+    <div class="item">Видеоконтент</div>
+    <div class="item">3D-модели для сайтов</div>
+  </div>
+
+  <!-- ТЕЛЕГРАМ-ПОЯСНЕНИЕ -->
+  <div class="telegram-block">
+    <p>
+      <strong>📩 Telegram — это ваш быстрый офис.</strong><br>
+      Кидайте техзадание, фото, идею — я даю предварительный расчёт и сроки в течение часа.
+      Без очередей и ожидания. Чертежи, правки, согласования — всё в одном окне.
+    </p>
+  </div>
+</section>
+
+<!-- ===== КОНТАКТЫ ===== -->
+<section class="section" id="contacts">
+  <h2>Контакты</h2>
+  <p class="desc" style="margin-bottom:10px;">
+    📞 <a href="tel:+380685742713" style="color:#00aaff;text-decoration:none;">+38 (068) 574 27 13</a>
+  </p>
+  <p class="desc">
+    📩 Telegram: <a href="https://t.me/SMM_Promotion" target="_blank" style="color:#00aaff;text-decoration:none;">@SMM_Promotion</a>
+  </p>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  © 2026 ВІТРАНСІНВЕСТ — Архитектура, строительство, цифровая упаковка
+</footer>
+
+<!-- ===== SCRIPT ===== -->
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("menu");
+  if (menu.style.display === "flex") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "flex";
+  }
+}
+</script>
+
+</body>
+</html>
